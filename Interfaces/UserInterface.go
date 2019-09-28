@@ -1,8 +1,8 @@
 package Interfaces
 
 type UserInterface interface {
-	setName(name string)
-	getName() string
-	setRemoteAddress(ip string)
-	getRemoteAddress() string
+	SetName(name string)
+	GetName() string
+	SetRemoteAddress(ip string)
+	GetRemoteAddress() string
 }

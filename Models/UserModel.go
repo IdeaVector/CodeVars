@@ -5,18 +5,18 @@ type UserModel struct {
 	remoteAddress string
 }
 
-func (user UserModel) getName() string {
+func (user UserModel) GetName() string {
 	return user.name
 }
 
-func (user UserModel) setName(name string) {
+func (user UserModel) SetName(name string) {
 	user.name = name
 }
 
-func (user UserModel) getRemoteAddress() string {
+func (user UserModel) GetRemoteAddress() string {
 	return user.remoteAddress
 }
 
-func (user UserModel) setRemoteAddress(address string) {
+func (user UserModel) SetRemoteAddress(address string) {
 	user.remoteAddress = address
 }
