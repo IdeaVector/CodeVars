@@ -1,17 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/CodeWars/route"
 	"log"
 	"net/http"
 )
 
 func main() {
-	http.HandleFunc("/", handler) // each request calls handler
+	http.HandleFunc("/", route.Handler) // each request calls handler
 	log.Fatal(http.ListenAndServe("0.0.0.0:8000", nil))
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-	fmt.Print(r.RemoteAddr + "\n")
 }

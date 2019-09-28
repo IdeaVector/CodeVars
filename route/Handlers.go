@@ -1,4 +1,4 @@
-package Route
+package route
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
 	defer r.Body.Close()
 	body, err := ioutil.ReadAll(r.Body)

@@ -1,4 +1,4 @@
-package models
+package Models
 
 type UserModel struct {
 	name          string
