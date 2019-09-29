@@ -1,4 +1,4 @@
-package Interfaces
+package interfaces
 
 type UserInterface interface {
 	SetName(name string)
